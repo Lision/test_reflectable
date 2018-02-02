@@ -1,0 +1,18 @@
+name: test_reflectable
+version: 2.0.0-dev.2.0
+description: >
+  This package contains tests which depend on package reflectable and which
+  are built by the code generation support offered by that package.
+author: The Dart Team <dart@google.com>
+homepage: https://www.github.com/dart-lang/test_reflectable
+environment:
+  sdk: '>=1.12.0 <2.0.0'
+dependencies:
+  reflectable: ^2.0.0-dev.2.0
+  build_runner: ^0.6.1
+  glob: ^1.1.5
+dev_dependencies:
+  unittest: ^0.11.0
+transformers:
+- $dart2js:
+    $include: []
